@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    /* Colors */
+    --primary-color: hsl(47, 88%, 63%);
+    --secundary-color: hsl(0, 0%, 100%);
+    --gray-color: hsl(0, 0%, 42%);
+    --deep-gray-color: hsl(0, 0%, 7%);
+
+    /* Font size */
+    --primary-font-size: 16px;
+    --primary-font-weight: 500;
+    --secundary-font-weight: 800;
+}
+.body {
+    font-family: Figtree;
+    background-color: var(--primary-color);
+}
+
+.container {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: var(--secundary-color);
+    position: absolute;
+    border: black solid 1px;
+}
+
+.false_card {
+    width: 319px;
+    height: 449px;
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 18px;
+    background-color: var(--deep-gray-color);
+
+}
+
+.title {
+    color: var(--deep-gray-color);
+    font-weight: 800;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.card_image {
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.paragraph {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--deep-gray-color);
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.price {
+    display: flex;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar_paragraph {
+    color: var(--deep-gray-color);
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.avatar_img {
+    border: white solid 1px;
+    border-radius: 100px;
+    margin: 20px;
+}
+
+.title_paragraph {
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 20px;
+    color: var(--deep-gray-color);
+    margin-bottom: 0;
+}
+
+.title_container {
+    display: flex;
+    align-items: center;
+    width: 82px;
+    height: 30px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.long {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--gray-color);
+    font-weight: var(--primary-font-weight);
+    font-size: var(--primary-font-size);
+    margin-bottom: 0;
+}
