@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --primary-blue-color: hsl(215, 51%, 70%);
+    --cyan-color: hsl(178, 100%, 50%);
+    --second-blue-color: hsl(217, 54%, 11%);
+    --trhee-blue-color: hsl(216, 50%, 16%);
+    --four-blue-color: hsl(215, 32%, 27%);
+    --white-color: hsl(0, 0%, 100%);
+
+    --primary-font-weigth: 300;
+    --second-font-weigth: 400;
+    --trhee-font-weigth: 600;
+}
+
+body {
+    font-family: Outfit;
+    background-color: var(--second-blue-color);
+}
+
+.container {
+    background-color: var(--second-blue-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: var(--trhee-blue-color);
+}
+
+.title {
+    color: var(--white-color);
+    font-weight: var(--trhee-font-weigth);
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.title:hover {
+    color: var(--cyan-color);
+    cursor: pointer;
+}
+
+.paragraph {
+    font-weight: var(--second-font-weigth);
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.price_container {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.avatar {
+    border-top: var(--four-blue-color) solid 1px;
+    display: flex;
+    width: 270px;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.avatar_paragraph {
+    color: white;
+    font-size: 14px;
+    font-weight: var(--primary-font-weigth);
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.avatar_img {
+    border: white solid 1px;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.price {
+    color: var(--cyan-color);
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: var(--trhee-font-weigth);
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: var(--primary-blue-color);
+    font-weight: var(--second-font-weigth);
+    margin-left: 5px;
+}
+
+.name {
+    font-size: 14px;
+    color: var(--white-color);
+    margin-left: 5px;
+    font-weight: var(--trhee-font-weigth);
+    margin-top: 20px;
+}
+
+.name:hover {
+    color: var(--cyan-color);
+    cursor: pointer;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* evita que interfiera con el hover */
+    width: 40px; /* ajusta según necesites */
+    height: 40px;
+}
+
+.image_container {
+    position: relative;
+    display: inline-block;
+    background-color: var(--cyan-color);
+    overflow: hidden;
+    border-radius: 10px;
+    width: 260px;
+    height: 260px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.image_container:hover .card_img {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.image_container:hover .eye {
+    opacity: 1;
+}
+
+.rum {
+    margin-left: 15px;
+}
+
+.clock {
+    margin-left: 75px;
+}
+
+
+.image_container .card_img {
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
